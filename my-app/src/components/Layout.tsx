@@ -1,23 +1,25 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import Footer from './Footer';
+import Navbar from './Navbar';
+import { LayoutDiv, PageContainerDiv } from './StyledComponents';
 
-export interface ILayoutComponentProps {}
 
-const LayoutComponent: React.FunctionComponent<ILayoutComponentProps> = (props) => {
+// top navigation
+// footer
+// top left logo
+
+const Layout: React.FunctionComponent = () => {
     return (
-        <>
-            <p>Site Layout</p>
-            <Link to="/">Home</Link>
-            <Link to="/timeline">Timeline</Link>
-            <Link to="/skills">Skills</Link>
-            <Link to="/projects">Projects</Link>
-            <Link to="/contact">Contact</Link>
-            <div style={{ border: 2, borderColor: 'blue', borderStyle: 'solid', padding: 20, margin: 20, width: 'auto', height: 'auto' }}>
+        <LayoutDiv>
+            <Navbar/>
+            <PageContainerDiv>
                 <Outlet />
-            </div>
-        </>
+            </PageContainerDiv>
+            <Footer/>
+        </LayoutDiv>
     );
 };
 
-export default LayoutComponent;
+export default Layout;
