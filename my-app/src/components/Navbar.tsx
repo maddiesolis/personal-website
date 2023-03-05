@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { NavContainerDiv, NavMenuDiv } from './StyledComponents';
+import { NavContainerDiv, NavMenuDiv } from './ComponentsSC';
 
 const Navbar: React.FunctionComponent = () => {
     return (
