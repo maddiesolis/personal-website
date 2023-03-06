@@ -9,7 +9,7 @@ export const PageTitleSpan = styled.span`
 `
 export const PageSubtitleSpan = styled(PageTitleSpan)`
     font-weight: 500;
-    font-size: 32px;
+    font-size: 28px;
     line-height: 40px;
 `
 export const StandardParaSPan = styled.span`
@@ -28,8 +28,8 @@ export const BlueBoxDiv = styled.div`
     width: fit-content;
     background-color: #EDF6F9;
     border-radius: 15px;
-    padding: 20px 60px 60px;
-    gap: 30px;
+    padding: 50px 150px 130px 150px;
+    gap: 80px;
 `
 export const CardsLayoutDiv = styled.div`
     display: grid;
@@ -44,7 +44,39 @@ export const BasicCardDiv = styled.div`
     height: 130px;
     width: 264px;
     background-color: white;
-    border-radius: 8px;
+    border-radius: 4px;
     padding: 10px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+`
+export const ListsDiv = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 52px;
+`
+export const ListCardDivPink = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 388px;
+    background-color: #F9E8D8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    border: none;
+    padding: 44px;
+    gap: 20px;
+`
+export const ListCardDivYellow = styled(ListCardDivPink)`
+    background-color: #FDFCDC;
+`
+export const ListCardDivGreen = styled(ListCardDivPink)`
+    background-color: #e3f9ed;
+`
+export const ListItemSpan = styled.span`
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;;
+    color: #023047;
+    list-style-type: circle;
 `
