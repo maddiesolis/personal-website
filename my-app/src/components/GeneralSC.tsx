@@ -12,6 +12,11 @@ export const PageSubtitleSpan = styled(PageTitleSpan)`
     font-size: 28px;
     line-height: 40px;
 `
+export const SubSubTitleSpan = styled(PageTitleSpan)`
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+`
 export const StandardParaSPan = styled.span`
     font-weight: 400;
     font-size: 14px;
@@ -41,8 +46,6 @@ export const BasicCardDiv = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 130px;
-    width: 264px;
     background-color: white;
     border-radius: 4px;
     padding: 10px;

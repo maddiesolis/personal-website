@@ -6,8 +6,8 @@ export const LayoutDiv = styled.div`
     flex-direction: column;
     justify-content: space-between;
     position: absolute;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     top: 0;
     bottom: 0;
     left: 0;
@@ -22,7 +22,8 @@ export const NavContainerDiv = styled.div`
     align-items: center;
     display: flex;
     justify-content: space-between;
-    height: 64px;
+    background-color: white;
+    height: 54px;
     padding: 20px 48px;
     position: sticky;
     top: 0;

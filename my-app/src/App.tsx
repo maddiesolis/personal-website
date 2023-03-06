@@ -5,7 +5,7 @@ import ContactPage from './pages/Contact/Contact';
 import HomePage from './pages/Home/Home';
 import ProjectsPage from './pages/Projects/Projects';
 import { SkillsPage } from './pages/Skills/Skills';
-import TimelinePage from './pages/Timeline/Timeline';
+import TimelinePage from './pages/About/About';
 
 export interface IApplicationProps {}
 

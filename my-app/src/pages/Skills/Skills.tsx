@@ -1,11 +1,13 @@
 import React from 'react';
 import CardsGrid from '../../components/CardsGrid';
+import Footer from '../../components/Footer';
 import { ListCardDivGreen, ListCardDivPink, ListCardDivYellow, ListItemSpan, ListsDiv, PageSubtitleSpan, PageTitleSpan } from '../../components/GeneralSC';
 import { CompsCards } from './CompsCards';
 import { SkillsDiv } from './SkillsSC';
 
 export const SkillsPage: React.FC = (props) => {
     return (
+        <>
             <SkillsDiv>
                 <PageTitleSpan>My skills</PageTitleSpan>
                 <ListsDiv>
@@ -48,6 +50,7 @@ export const SkillsPage: React.FC = (props) => {
                 </ListsDiv>
                 <CardsGrid gridtitle='Competencies' cards={CompsCards}/>
             </SkillsDiv>
-
+            <Footer/>
+        </>
     );
 };

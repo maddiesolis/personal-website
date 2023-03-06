@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../../components/Footer';
 import { HomepageSVG } from '../../svg/HomepageSVG';
 import { AnimatedButton, AnimatedButtonDiv, AnimatedButtonLink, DescriptionSpan, FullNameSpan, HomeDiv, HomeLeftSideDiv, HomeRightSideDiv, HomeTitleDiv, IntroSpan } from './HomeSC';
 
@@ -7,6 +8,7 @@ export interface IHomePageProps {}
 const HomePage: React.FunctionComponent<IHomePageProps> = (props) => {
 
     return (
+        <>
         <HomeDiv>
             <HomeLeftSideDiv>
                 <HomeTitleDiv>
@@ -24,6 +26,8 @@ const HomePage: React.FunctionComponent<IHomePageProps> = (props) => {
                 <HomepageSVG/>
             </HomeRightSideDiv>
         </HomeDiv>
+        <Footer/>
+        </>
     );
 };
 
