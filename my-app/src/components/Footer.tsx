@@ -4,7 +4,7 @@ import { FooterContainerDiv } from './ComponentsSC';
 
 const Footer: React.FunctionComponent = () => {
     return (
-        <FooterContainerDiv>Footer</FooterContainerDiv>
+        <FooterContainerDiv/>
     );
 };
 

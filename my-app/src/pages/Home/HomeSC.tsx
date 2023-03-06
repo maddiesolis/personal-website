@@ -1,15 +1,17 @@
 import styled from "styled-components";
+import { Link } from 'react-router-dom';
 
 export const HomeDiv = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 100%;
-    padding: 64px
 `
 export const HomeLeftSideDiv = styled.div`
     display: grid;
     grid-template-rows: 1fr 1fr;
     padding: 5%;
+    padding-top: 124px;
+    padding-left: 166px;
 `
 export const HomeRightSideDiv = styled.div`
     display: flex;
@@ -23,7 +25,6 @@ export const HomeRightSideDiv = styled.div`
 export const HomeTitleDiv = styled.div`
     display: flex;
     flex-direction: column;
-    /* gap: 2px; */
 `
 
 export const IntroSpan = styled.span`
@@ -68,7 +69,8 @@ export const AnimatedButton = styled.button`
         cursor: pointer;
     }
 `
-export const AnimatedButtonSpan = styled.span`
+export const AnimatedButtonLink = styled(Link)`
+    text-decoration: none;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
     font-size: 18px;

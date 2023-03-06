@@ -10,7 +10,6 @@ const Navbar: React.FunctionComponent = () => {
                 <NavMenuLink to="/">Home</NavMenuLink>
                 <NavMenuLink to="/about">About</NavMenuLink>
                 <NavMenuLink to="/skills">Skills</NavMenuLink>
-                <NavMenuLink to="/projects">Projects</NavMenuLink>
                 <NavMenuButton><NavMenuButtonLink to="/contact">Contact</NavMenuButtonLink></NavMenuButton>
             </NavMenuDiv>
         </NavContainerDiv>

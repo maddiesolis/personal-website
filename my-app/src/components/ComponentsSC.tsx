@@ -1,15 +1,13 @@
 import styled from "styled-components";
-import { CSSVariables } from "../CSSVariables";
 import { Link } from 'react-router-dom';
-import React from "react";
 
 export const LayoutDiv = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     position: absolute;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     top: 0;
     bottom: 0;
     left: 0;
@@ -21,10 +19,9 @@ export const PageContainerDiv = styled.div`
 `
 
 export const NavContainerDiv = styled.div`
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    // as the screen gets smaller, fractions need to change
     align-items: center;
+    display: flex;
+    justify-content: space-between;
     height: 64px;
     padding: 20px 48px;
     position: sticky;
@@ -35,7 +32,7 @@ export const NavMenuDiv = styled(NavContainerDiv)`
     display: flex;
     justify-content: space-between;
     padding: 0;
-    gap: 48;
+    gap: 48px;
 `
 
 export const NavMenuLink = styled(Link)`
@@ -86,6 +83,15 @@ export const NavMenuButtonLink = styled(NavMenuLink)`
 export const FooterContainerDiv = styled.div`
     display: flex;
     justify-self: end;
-    height: 120px;
-    background-color: lightpink;
+    height: 84px;
+    background-color: #E76F51;
+    bottom: 0;
+
+    /* align-items: center;
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    padding: 20px 48px;
+    position: sticky;
+    top: 0; */
 `

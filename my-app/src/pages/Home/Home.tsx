@@ -1,6 +1,6 @@
 import React from 'react';
 import { HomepageSVG } from '../../svg/HomepageSVG';
-import { AnimatedButton, AnimatedButtonDiv, AnimatedButtonSpan, DescriptionSpan, FullNameSpan, HomeDiv, HomeLeftSideDiv, HomeRightSideDiv, HomeTitleDiv, IntroSpan } from './HomeSC';
+import { AnimatedButton, AnimatedButtonDiv, AnimatedButtonLink, DescriptionSpan, FullNameSpan, HomeDiv, HomeLeftSideDiv, HomeRightSideDiv, HomeTitleDiv, IntroSpan } from './HomeSC';
 
 export interface IHomePageProps {}
 
@@ -16,7 +16,7 @@ const HomePage: React.FunctionComponent<IHomePageProps> = (props) => {
                 </HomeTitleDiv>
                 <AnimatedButtonDiv>
                     <AnimatedButton>
-                        <AnimatedButtonSpan>About me</AnimatedButtonSpan>
+                        <AnimatedButtonLink to="/about">About me</AnimatedButtonLink>
                     </AnimatedButton>
                 </AnimatedButtonDiv>
             </HomeLeftSideDiv>

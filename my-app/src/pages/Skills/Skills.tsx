@@ -1,18 +1,14 @@
 import React from 'react';
+import CardsGrid from '../../components/CardsGrid';
+import { BasicCardDiv, BlueBoxDiv, CardsLayoutDiv, PageSubtitleSpan } from '../../components/GeneralSC';
+import { CompsCards } from './CompsCards';
+import { SkillsDiv } from './SkillsSC';
 
-export interface ISkillsPageProps {}
-
-const SkillsPage: React.FunctionComponent<ISkillsPageProps> = (props) => {
-
+export const SkillsPage: React.FC = (props) => {
     return (
-        <div>
-            <p>Skills page</p>
-            <div>
-                <span>Programming languages</span>
-                <span>Softwares, Frameworks & Developer Tools</span>
-            </div>
-        </div>
+            <SkillsDiv>
+                <CardsGrid gridtitle='Competencies' cards={CompsCards}/>
+            </SkillsDiv>
+
     );
 };
-
-export default SkillsPage;
