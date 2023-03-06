@@ -1,19 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { NavContainerDiv, NavMenuDiv } from './ComponentsSC';
+import { LogoLink, NavContainerDiv, NavMenuButton, NavMenuButtonLink, NavMenuDiv, NavMenuLink } from './ComponentsSC';
 
 const Navbar: React.FunctionComponent = () => {
     return (
         <NavContainerDiv>
-            <div>
-                <Link to="/">Logo</Link>
-            </div>
+            <LogoLink to="/">madeline</LogoLink>
             <NavMenuDiv>
-                <Link to="/">Home</Link>
-                <Link to="/timeline">Timeline</Link>
-                <Link to="/skills">Skills</Link>
-                <Link to="/projects">Projects</Link>
-                <Link to="/contact">Contact</Link>
+                <NavMenuLink to="/">Home</NavMenuLink>
+                <NavMenuLink to="/about">About</NavMenuLink>
+                <NavMenuLink to="/skills">Skills</NavMenuLink>
+                <NavMenuLink to="/projects">Projects</NavMenuLink>
+                <NavMenuButton><NavMenuButtonLink to="/contact">Contact</NavMenuButtonLink></NavMenuButton>
             </NavMenuDiv>
         </NavContainerDiv>
     );

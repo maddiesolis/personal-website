@@ -17,7 +17,6 @@ const Layout: React.FunctionComponent = () => {
             <PageContainerDiv>
                 <Outlet />
             </PageContainerDiv>
-            <Footer/>
         </LayoutDiv>
     );
 };
