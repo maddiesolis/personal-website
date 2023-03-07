@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { Link } from 'react-router-dom';
+import React from "react";
+import { PageTitleSpan } from "./GeneralSC";
 
 export const LayoutDiv = styled.div`
     display: flex;
@@ -16,6 +18,12 @@ export const LayoutDiv = styled.div`
 
 export const PageContainerDiv = styled.div`
     height: 100%;
+    /* padding: 5%; */
+    /* padding-top: 124px;
+    padding-left: 166px; */
+    padding: 50px 166px;
+    /* margin-bottom: 100px; */
+    /* padding-bottom: 100px; */
 `
 
 export const NavContainerDiv = styled.div`

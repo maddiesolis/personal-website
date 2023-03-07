@@ -9,17 +9,22 @@ export const HomeDiv = styled.div`
 export const HomeLeftSideDiv = styled.div`
     display: grid;
     grid-template-rows: 1fr 1fr;
-    padding: 5%;
-    padding-top: 124px;
-    padding-left: 166px;
+    /* padding-top: 124px;
+    padding-left: 166px; */
+
+    padding-top: 74px;
+    /* padding-left: 100px; */
 `
 export const HomeRightSideDiv = styled.div`
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     position: relative;
-    padding-right: 136px;
-    padding-bottom: 220px;
+    /* padding-right: 136px; */
+    padding-bottom: 50px;
+
+    /* padding-right: 5%;
+    padding-bottom: 5%; */
 `
 
 export const HomeTitleDiv = styled.div`
@@ -46,7 +51,7 @@ export const DescriptionSpan = styled(IntroSpan)`
     font-weight: 400 !important;
     width: 600px;
     font-size: 24px;
-    line-height: 32px;
+    line-height: 40px;
     margin-top: 20px;
 `
 

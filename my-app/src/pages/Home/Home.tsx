@@ -26,7 +26,6 @@ const HomePage: React.FunctionComponent<IHomePageProps> = (props) => {
                 <HomepageSVG/>
             </HomeRightSideDiv>
         </HomeDiv>
-        <Footer/>
         </>
     );
 };
