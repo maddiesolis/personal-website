@@ -1,19 +1,26 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { PageContainerDiv } from '../../components/ComponentsSC';
-import { InnerPageContainer } from '../../components/GeneralSC';
+import { InnerPageContainer, PageTitleDiv, PageTitleSpan } from '../../components/GeneralSC';
+import { EmailSVG, GitSVG, LinkedinSVG } from '../../svg/contactSVG';
+import { DescriptionSpan } from '../Home/HomeSC';
+import { ContactDescriptionSpan, ContactPageDiv, ContactPageTitleDiv, IconsDiv, OuterContactPageDiv } from './ContactSC';
+import CopyToClipboard from 'react-copy-to-clipboard';
 
-const ContactPage: React.FunctionComponent = () => {
-
+export const ContactPage: React.FunctionComponent = () => {
     return (
-        <PageContainerDiv>
-        <InnerPageContainer 
-            pagetitle={'Get in touch'} 
-            description={"I'd love to hear from you!"} 
-            contents={
-            <div>
-
-            </div>}/>
-        </PageContainerDiv>
+        <OuterContactPageDiv>
+            <ContactPageDiv>
+                <ContactPageTitleDiv>
+                    <PageTitleSpan>Get in touch</PageTitleSpan>
+                    <ContactDescriptionSpan>I’d love to connect with you! Please feel free to reach out using any of the platforms listed below.</ContactDescriptionSpan>
+                </ContactPageTitleDiv>
+                <IconsDiv>
+                    <GitSVG/>
+                    <LinkedinSVG/>
+                </IconsDiv>
+            </ContactPageDiv>
+        </OuterContactPageDiv>
     );
 };
 

@@ -2,7 +2,7 @@ import React from 'react';
 import CompsCardsGrid, { AwardsCardsGrid, ExpCardsGrid } from '../../components/CardsGrid';
 import { PageContainerDiv } from '../../components/ComponentsSC';
 import Footer from '../../components/Footer';
-import { BasicCardDiv, InnerPageContainer, PageSubtitleSpan, PageTitleSpan, StandardParaSPan, SubSubTitleSpan } from '../../components/GeneralSC';
+import { BasicCardDiv, CenteredPageDiv, InnerPageContainer, PageSubtitleSpan, PageTitleSpan, StandardParaSPan, SubSubTitleSpan } from '../../components/GeneralSC';
 import { BooksSVG, ComputerSVG, SchoolSVG, TreeSVG, VictoriaSVG, WorkSVG } from '../../svg/AboutSVG';
 import { DescriptionSpan } from '../Home/HomeSC';
 import { AwardsCards, CompsCards, ExpCards } from '../Skills/CardsArrays';
@@ -18,10 +18,11 @@ const TimelinePage: React.FunctionComponent<ITimelinePageProps> = (props) => {
                 pagetitle={'About me'} 
                 description={'On this page, you’ll learn more about who I am, and what I do (in both professional and academic contexts).'} 
                 contents={
-                <div>
+                <CenteredPageDiv>
                     <OverviewSection/>
+                    {/* <AwardsCardsGrid gridtitle='Awards & Accomplishments' cards={AwardsCards} description='Hover over a card to flip it; the back of every card contains a detailed description of that award.'/> */}
 
-                </div>}/>
+                </CenteredPageDiv>}/>
         </PageContainerDiv>
     );
 };

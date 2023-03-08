@@ -17,6 +17,7 @@ const Application: React.FunctionComponent<IApplicationProps> = (props) => {
                     <Route path="/" element={<HomePage />} />
                     <Route path="about" element={<AboutPage />} />
                     <Route path="skills" element={<SkillsPage />} />
+                    <Route path="contact" element={<ContactPage />} />
                 </Route>
             </Routes>
         </BrowserRouter>

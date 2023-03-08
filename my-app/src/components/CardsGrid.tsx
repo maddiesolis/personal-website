@@ -68,13 +68,15 @@ export const AwardsCardsGrid: React.FC<AwardsCardsGridProps> = ({
             <PageSubtitleSpan>{title}</PageSubtitleSpan>
             <PageDescriptionSpan>{description}</PageDescriptionSpan>
         </PageTitleDiv>
-        <CardsLayoutDiv>
-            {cards.map((card) => {
-                return (
-                    <AwardsFlipCard title={card.title} year={card.year} description={card.description}/>
-                )
-            })}
-        </CardsLayoutDiv>
+        <CardsLayoutContainerDiv>
+            <CardsLayoutDiv>
+                {cards.map((card) => {
+                    return (
+                        <AwardsFlipCard title={card.title} year={card.year} description={card.description}/>
+                    )
+                })}
+            </CardsLayoutDiv>
+        </CardsLayoutContainerDiv>
     </BlueBoxDiv>    
     );
 };

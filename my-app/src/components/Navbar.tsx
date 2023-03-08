@@ -10,11 +10,10 @@ const Navbar: React.FunctionComponent = () => {
                 <NavMenuLink to="/">Home</NavMenuLink>
                 <NavMenuLink to="/about">About</NavMenuLink>
                 <NavMenuLink to="/skills">Skills</NavMenuLink>
+                <NavMenuButton><NavMenuButtonLink to="/contact">Contact</NavMenuButtonLink></NavMenuButton>
             </NavMenuDiv>
         </NavContainerDiv>
     );
 };
 
 export default Navbar;
-
-{/* <NavMenuButton><NavMenuButtonLink to="/contact">Contact</NavMenuButtonLink></NavMenuButton> */}
