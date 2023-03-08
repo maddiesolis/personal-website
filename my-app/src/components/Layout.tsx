@@ -14,9 +14,9 @@ const Layout: React.FunctionComponent = () => {
     return (
         <LayoutDiv>
             <Navbar/>
-            <PageContainerDiv>
+            
                 <Outlet />
-            </PageContainerDiv>
+            
         </LayoutDiv>
     );
 };

@@ -10,20 +10,14 @@ export const LayoutDiv = styled.div`
     position: absolute;
     height: 100%;
     width: 100%;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
 `
 
 export const PageContainerDiv = styled.div`
     height: 100%;
-    /* padding: 5%; */
-    /* padding-top: 124px;
-    padding-left: 166px; */
-    padding: 50px 166px;
-    /* margin-bottom: 100px; */
-    /* padding-bottom: 100px; */
+    padding: 2% 10%;
+`
+export const HomepageContainerDiv = styled(PageContainerDiv)`
+    padding: 5% 10%;
 `
 
 export const NavContainerDiv = styled.div`

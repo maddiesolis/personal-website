@@ -36,17 +36,13 @@ export const StandardParaSPan = styled.span`
 `
 export const PageDescriptionSpan = styled(StandardParaSPan)`
     font-size: 18px;
-    line-height: 22px;
+    line-height: 28px;
     text-align: left;
 `
 export const PageTitleDiv = styled.div`
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
     gap: 20px;
-    margin: none;
-    /* margin-left: -270px; // bad */
 `
 export const BoxTitleDiv = styled.div`
     display: flex;
@@ -57,10 +53,11 @@ export const BoxTitleDiv = styled.div`
     /* margin-left: -85px; */
 `
 export const BlueBoxTitleDiv = styled(BoxTitleDiv)`
-    margin-left: -85px;
+    /* display: flex; */
+    /* margin-left: -85px; */
 `
 export const BlueBoxDiv = styled.div`
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
@@ -69,7 +66,17 @@ export const BlueBoxDiv = styled.div`
     background-color: #EDF6F9;
     border-radius: 15px;
     padding: 50px 150px 130px 150px;
-    gap: 80px;
+    gap: 80px; */
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* position: absolute; */
+    height: fit-content;
+    width: fit-content;
+    gap: 20px;
+    background-color: #EDF6F9;
+    border-radius: 15px;
 `
 export const CardsLayoutDiv = styled.div`
     display: grid;
@@ -87,21 +94,20 @@ export const BasicCardDiv = styled.div`
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 `
 export const ListsDiv = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 52px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 7%;
 `
 export const ListCardDivPink = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 388px;
+    width: 90%;
     background-color: #F9E8D8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
     border: none;
-    padding: 44px;
+    padding: 40px;
     gap: 20px;
 `
 export const ListCardDivYellow = styled(ListCardDivPink)`

@@ -9,22 +9,14 @@ export const HomeDiv = styled.div`
 export const HomeLeftSideDiv = styled.div`
     display: grid;
     grid-template-rows: 1fr 1fr;
-    /* padding-top: 124px;
-    padding-left: 166px; */
-
-    padding-top: 74px;
-    /* padding-left: 100px; */
+    gap: 15%;
 `
 export const HomeRightSideDiv = styled.div`
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     position: relative;
-    /* padding-right: 136px; */
-    padding-bottom: 50px;
-
-    /* padding-right: 5%;
-    padding-bottom: 5%; */
+    /* padding-bottom: 50px; */
 `
 
 export const HomeTitleDiv = styled.div`
