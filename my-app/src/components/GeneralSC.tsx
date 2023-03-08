@@ -4,10 +4,15 @@ import styled from "styled-components";
 export const PageDiv = styled.div`
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
+    align-items: center;
     gap: 50px;
     padding: none;
     padding-bottom: 100px;
+`
+export const OuterPageContainerDiv = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 `
 export const PageTitleSpan = styled.span`
     font-family: 'Ubuntu', sans-serif;
@@ -50,39 +55,6 @@ export const BoxTitleDiv = styled.div`
     justify-content: flex-start;
     align-items: flex-start;
     gap: 20px;
-    /* margin-left: -85px; */
-`
-export const BlueBoxTitleDiv = styled(BoxTitleDiv)`
-    /* display: flex; */
-    /* margin-left: -85px; */
-`
-export const BlueBoxDiv = styled.div`
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    height: fit-content;
-    width: fit-content;
-    background-color: #EDF6F9;
-    border-radius: 15px;
-    padding: 50px 150px 130px 150px;
-    gap: 80px; */
-
-    display: flex;
-    flex-direction: column;
-    /* justify-content: space-between; */
-    /* position: absolute; */
-    height: fit-content;
-    width: fit-content;
-    gap: 20px;
-    background-color: #EDF6F9;
-    border-radius: 15px;
-`
-export const CardsLayoutDiv = styled.div`
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: stretch;
-    grid-gap: 60px;
 `
 export const BasicCardDiv = styled.div`
     display: flex;
@@ -90,13 +62,13 @@ export const BasicCardDiv = styled.div`
     align-items: center;
     background-color: white;
     border-radius: 4px;
-    padding: 10px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 `
 export const ListsDiv = styled.div`
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 7%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5%;
 `
 export const ListCardDivPink = styled.div`
     display: flex;
@@ -108,7 +80,7 @@ export const ListCardDivPink = styled.div`
     border-radius: 4px;
     border: none;
     padding: 40px;
-    gap: 20px;
+    gap: 15px;
 `
 export const ListCardDivYellow = styled(ListCardDivPink)`
     background-color: #FDFCDC;
@@ -116,13 +88,13 @@ export const ListCardDivYellow = styled(ListCardDivPink)`
 export const ListCardDivGreen = styled(ListCardDivPink)`
     background-color: #e3f9ed;
 `
-export const ListItemSpan = styled.span`
+export const ListItemSpan = styled.li`
     font-family: 'Ubuntu', sans-serif;
     font-size: 18px;
     font-weight: 500;
     line-height: 22px;;
     color: #023047;
-    list-style-type: circle;
+    list-style-type: disc;
 `
 
 export interface PageProps{
@@ -136,12 +108,73 @@ export const InnerPageContainer: React.FC<PageProps> = ({
     contents,
 }) => {
     return (
-        <PageDiv>
-                <PageTitleDiv>
-                    <PageTitleSpan>{pagetitle}</PageTitleSpan>
-                    <PageDescriptionSpan>{description}</PageDescriptionSpan>
-                </PageTitleDiv>
-                {contents}
-        </PageDiv>
+        <OuterPageContainerDiv>
+            <PageTitleDiv>
+                <PageTitleSpan>{pagetitle}</PageTitleSpan>
+                <PageDescriptionSpan>{description}</PageDescriptionSpan>
+            </PageTitleDiv>
+            <PageDiv>
+                    {contents}
+            </PageDiv>
+        </OuterPageContainerDiv>
     )
+}
+
+export interface ListsContainerProps{
+    title: string;
+    items: string[];
+    colour: "pink" | "yellow" | "green";
+}
+export const ListsContainer: React.FC<ListsContainerProps> = ({
+    title, items, colour
+}) => {
+    if (colour == "pink") {
+        return (
+            <ListsDiv>
+                <ListCardDivPink>
+                    <PageSubtitleSpan>
+                        {title}
+                    </PageSubtitleSpan>
+                    {items.map((item) => {
+                        return (
+                            <ListItemSpan>{item}</ListItemSpan>
+                        )
+                    })}
+                </ListCardDivPink>
+            </ListsDiv>
+        )
+    }
+    else if (colour == "yellow") {
+        return (
+            <ListsDiv>
+                <ListCardDivYellow>
+                    <PageSubtitleSpan>
+                        {title}
+                    </PageSubtitleSpan>
+                    {items.map((item) => {
+                        return (
+                            <ListItemSpan>{item}</ListItemSpan>
+                        )
+                    })}
+                </ListCardDivYellow>
+            </ListsDiv>
+        )
+    }
+    else if (colour == "green") {
+        return (
+            <ListsDiv>
+                <ListCardDivGreen>
+                    <PageSubtitleSpan>
+                        {title}
+                    </PageSubtitleSpan>
+                    {items.map((item) => {
+                        return (
+                            <ListItemSpan>{item}</ListItemSpan>
+                        )
+                    })}
+                </ListCardDivGreen>
+            </ListsDiv>
+        )
+    }
+    return <div>clover</div>;
 }

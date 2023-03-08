@@ -1,7 +1,30 @@
-// import { CardBackDiv, CardContainerDiv, CardDiv, CardFrontDiv } from "./GeneralSC";
 import styled from "styled-components";
 import { AwardCardProps, CompCardProps, ExpCardProps } from "./CardsGrid";
 
+export const BlueBoxDiv = styled.div`
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    gap: 20px;
+    background-color: #EDF6F9;
+    border-radius: 4px;
+    padding: 2% 5%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+`
+export const CardsLayoutContainerDiv = styled.div`
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+`
+export const CardsLayoutDiv = styled.div`
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 3rem;
+`
 export const CardContainerDiv = styled.div`
     height: 150px;
     width: 264px;
@@ -56,8 +79,6 @@ export const CardBackDiv = styled(CardFrontDiv)`
     font-weight: 400;
     text-align: center;
     transform: rotateY(180deg) translateX(20px);
-`
-export const CardBackTextSpan = styled.span`
 `
 export const YearSpan = styled.span`
     font-family: 'Ubuntu',sans-serif;

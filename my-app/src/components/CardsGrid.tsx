@@ -1,5 +1,5 @@
-import { AwardCard, AwardsFlipCard, CompsFlipCard, ExpFlipCard } from "./FlipCard";
-import { BlueBoxDiv, BlueBoxTitleDiv, BoxTitleDiv, CardsLayoutDiv, PageDescriptionSpan, PageSubtitleSpan } from "./GeneralSC";
+import { AwardCard, AwardsFlipCard, BlueBoxDiv, CardsLayoutContainerDiv, CardsLayoutDiv, CompsFlipCard, ExpFlipCard } from "./FlipCard";
+import { BoxTitleDiv, PageDescriptionSpan, PageSubtitleSpan, PageTitleDiv } from "./GeneralSC";
 import styled from "styled-components";
 
 export interface CompCardProps {
@@ -40,10 +40,11 @@ export const CompsCardsGrid: React.FC<CompsCardsGridProps> = ({
 }) => {
     return (
     <BlueBoxDiv>
-        <BlueBoxTitleDiv>
+        <PageTitleDiv>
             <PageSubtitleSpan>{title}</PageSubtitleSpan>
             <PageDescriptionSpan>{description}</PageDescriptionSpan>
-        </BlueBoxTitleDiv>
+        </PageTitleDiv>
+        <CardsLayoutContainerDiv>
         <CardsLayoutDiv>
             {cards.map((card) => {
                 return (
@@ -51,6 +52,7 @@ export const CompsCardsGrid: React.FC<CompsCardsGridProps> = ({
                 )
             })}
         </CardsLayoutDiv>
+        </CardsLayoutContainerDiv>
     </BlueBoxDiv>    
     );
 };
@@ -62,10 +64,10 @@ export const AwardsCardsGrid: React.FC<AwardsCardsGridProps> = ({
 }) => {
     return (
     <BlueBoxDiv>
-        <BlueBoxTitleDiv>
+        <PageTitleDiv>
             <PageSubtitleSpan>{title}</PageSubtitleSpan>
             <PageDescriptionSpan>{description}</PageDescriptionSpan>
-        </BlueBoxTitleDiv>
+        </PageTitleDiv>
         <CardsLayoutDiv>
             {cards.map((card) => {
                 return (
