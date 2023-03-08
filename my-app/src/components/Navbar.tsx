@@ -8,6 +8,7 @@ const Navbar: React.FunctionComponent = () => {
             <LogoLink to="/">madeline</LogoLink>
             <NavMenuDiv>
                 <NavMenuLink to="/">Home</NavMenuLink>
+                <NavMenuLink to="/about">About</NavMenuLink>
                 <NavMenuLink to="/skills">Skills</NavMenuLink>
             </NavMenuDiv>
         </NavContainerDiv>

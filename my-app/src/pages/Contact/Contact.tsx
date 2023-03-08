@@ -1,13 +1,19 @@
 import React from 'react';
+import { PageContainerDiv } from '../../components/ComponentsSC';
+import { InnerPageContainer } from '../../components/GeneralSC';
 
-export interface IContactPageProps {}
-
-const ContactPage: React.FunctionComponent<IContactPageProps> = (props) => {
+const ContactPage: React.FunctionComponent = () => {
 
     return (
-        <div>
-            <p>Contact page</p>
-        </div>
+        <PageContainerDiv>
+        <InnerPageContainer 
+            pagetitle={'Get in touch'} 
+            description={"I'd love to hear from you!"} 
+            contents={
+            <div>
+
+            </div>}/>
+        </PageContainerDiv>
     );
 };
 

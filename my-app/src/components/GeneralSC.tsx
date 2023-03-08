@@ -1,7 +1,7 @@
 import { Children, ReactElement, ReactNode } from "react";
 import styled from "styled-components";
 
-export const PageDiv = styled.div`
+export const CenteredPageDiv = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -99,7 +99,7 @@ export const ListItemSpan = styled.li`
 
 export interface PageProps{
     pagetitle: string;
-    description: string;
+    description?: string;
     contents: ReactElement;
 }
 export const InnerPageContainer: React.FC<PageProps> = ({
@@ -113,9 +113,7 @@ export const InnerPageContainer: React.FC<PageProps> = ({
                 <PageTitleSpan>{pagetitle}</PageTitleSpan>
                 <PageDescriptionSpan>{description}</PageDescriptionSpan>
             </PageTitleDiv>
-            <PageDiv>
-                    {contents}
-            </PageDiv>
+            {contents}
         </OuterPageContainerDiv>
     )
 }

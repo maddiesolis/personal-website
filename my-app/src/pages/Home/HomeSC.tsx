@@ -16,12 +16,12 @@ export const HomeRightSideDiv = styled.div`
     justify-content: flex-end;
     align-items: flex-end;
     position: relative;
-    /* padding-bottom: 50px; */
 `
 
 export const HomeTitleDiv = styled.div`
     display: flex;
     flex-direction: column;
+    gap: 8px;
 `
 
 export const IntroSpan = styled.span`
@@ -44,9 +44,8 @@ export const DescriptionSpan = styled(IntroSpan)`
     width: 600px;
     font-size: 24px;
     line-height: 40px;
-    margin-top: 20px;
+    margin-top: 10px;
 `
-
 export const AnimatedButtonDiv = styled.div`
     position: relative;
     width: 150px;

@@ -14,9 +14,7 @@ const Layout: React.FunctionComponent = () => {
     return (
         <LayoutDiv>
             <Navbar/>
-            
                 <Outlet />
-            
         </LayoutDiv>
     );
 };

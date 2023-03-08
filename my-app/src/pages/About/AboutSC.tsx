@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { PageSubtitleSpan } from "../../components/GeneralSC";
+import { SchoolSVG } from "../../svg/AboutSVG";
 import { DescriptionSpan } from "../Home/HomeSC";
 
 export const OuterAboutDiv = styled.div`
@@ -68,13 +70,47 @@ export const AboutCardDiv = styled.div`
     height: fit-content;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 `
-export const OverviewDiv = styled.div`
+export const OverviewContainerDiv = styled.div`
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+`
+export const OverviewWriteupDiv = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: start;
     gap: 20px;
 `
-export const AboutDescriptionSpan = styled(DescriptionSpan)`
-    color: #70757f;
+export const OverviewSpanDiv = styled.div`
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    color: #264653;
 `
+export const OverviewSVGDiv = styled.div`
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+`
+export const OverviewSection: React.FC = ({
+}) => {
+    return (
+            <OverviewWriteupDiv>
+                <PageSubtitleSpan>Overview</PageSubtitleSpan>
+                <OverviewSpanDiv>
+                    I am currently in my third year of the Visual Arts and Computer Science
+                    Combined Major program at the University of Victoria. This interdisciplinary 
+                    field has inspired me to continue bridging the gap between technical and creative 
+                    worlds, and has given me the tools and skills I need to succeed in both areas.
+                    <br/>
+                    In May 2022, I began an eight-month co-op with SaaSquatch as a frontend developer. 
+                    I learnt how to use Typescript with React in a very short amount of time, and was 
+                    pushing code to production within the first month of being there! My position at 
+                    SaaSquatch evolved over time, and I ended up landing the role of Technical Product 
+                    Analyst. I returned to classes in January 2023 and was hired part-time at SaaSquatch. 
+                    My two positions at SaaSquatch have given me well-rounded knowledge of the SaaS industry, 
+                    as I have worked with all departments, ranging from engineering to marketing, to product 
+                    management.
+                </OverviewSpanDiv>
+            </OverviewWriteupDiv>
+    )
+}
