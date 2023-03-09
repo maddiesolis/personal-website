@@ -8,8 +8,13 @@ import { DescriptionSpan } from '../Home/HomeSC';
 import { AwardsCards, CompsCards, ExpCards } from '../Skills/CardsArrays';
 import { MiddleSectionDiv, OverviewSection, SVGContainerDiv } from './AboutSC';
 import { ExperienceSection } from './Experience';
+import styled from 'styled-components';
 
-const TimelinePage: React.FC = () => {
+const AwardsDiv = styled.div`
+    display: flex;
+    justify-content: flex-end;
+`
+const AboutPage: React.FC = () => {
 
     return (
         <PageContainerDiv>
@@ -20,39 +25,14 @@ const TimelinePage: React.FC = () => {
                 <CenteredPageDiv>
                     <OverviewSection/>
                     <MiddleSectionDiv>
-                        <ExperienceSection exps={ExpCards}/>
-                        {/* <SVGContainerDiv><WorkSVG/></SVGContainerDiv> */}
+                        <ExperienceSection title="Experience" description="Scroll through this list to see my past (and current) work experience. The list is ordered from most to least recent." exps={ExpCards}/>
+                        <AwardsDiv>
+                            <ExperienceSection title="Awards" description="Scroll through this list to see the scholarships and bursaries I have been awarded. The list is ordered from most to least recent." exps={AwardsCards}/>
+                        </AwardsDiv>
                     </MiddleSectionDiv>
-                    {/* <AwardsCardsGrid gridtitle='Awards & Accomplishments' cards={AwardsCards} description='Hover over a card to flip it; the back of every card contains a detailed description of that award.'/> */}
                 </CenteredPageDiv>}/>
         </PageContainerDiv>
     );
 };
 
-export default TimelinePage;
-
-/* <AwardsCardsGrid gridtitle='Awards & Accomplishments' cards={AwardsCards} description='Hover over a card to flip it; the back of every card contains a detailed description of that award.'/> */
-
-// return (
-//     <InnerPageContainer 
-//     pagetitle='About me' 
-//     description='On this page, you’ll learn more about who I am, and what I do (in both professional and academic contexts).'
-//     contents={
-//         <OuterAboutDiv>
-//         <TopAboutDiv>
-//             <OverviewDiv>
-//                 <PageSubtitleSpan>Overview</PageSubtitleSpan>
-//                 <AboutDescriptionSpan>
-//                     I am currently in my third year of the Visual Arts and Computer Science Combined Major program at the University of Victoria. This interdisciplinary field has inspired me to continue bridging the gap between technical and creative subjects, and has given me the tools and skills I need to succeed in both areas. <br/> <br/>
-//                     In May 2022, I began an eight-month co-op with SaaSquatch as a frontend developer. I learnt how to use Typescript with React in a very short amount of time, and was pushing code to production within the first month of being there! My position at SaaSquatch evolved over time, and I ended up landing the role of Technical Product Analyst. I returned to classes in January 2023 and was hired part-time at SaaSquatch. My two positions at SaaSquatch have given me well-rounded knowledge of the SaaS industry, as I have worked with all departments, ranging from engineering to marketing, to product management.
-//                 </AboutDescriptionSpan>
-//             </OverviewDiv>
-//             <ExpCardsGrid gridtitle="Experience" description='Hover over the cards below to see details about each work experience. The cards are ordered from most to least recent.' cards={ExpCards}/>
-//         </TopAboutDiv>
-//         <BottomAboutDiv>
-//             <AwardsCardsGrid gridtitle='Awards & Accomplishments' cards={AwardsCards} description='Hover over a card to flip it; the back of every card contains a detailed description of that competency.'/>
-//         </BottomAboutDiv>
-//         </OuterAboutDiv>
-//     }
-//     />
-// );
+export default AboutPage;

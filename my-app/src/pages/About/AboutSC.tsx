@@ -28,6 +28,7 @@ export const MiddleSectionDiv = styled.div`
     display: grid;
     grid-template-columns: 50% 50%;
     width: 100%;
+    /* grid-gap: 5%; */
 `
 export const SVGContainerDiv = styled.div`
     display: flex;
@@ -78,7 +79,7 @@ export const OverviewSection: React.FC = ({
                     pushing code to production within the first month of being there! My position at 
                     SaaSquatch evolved over time, and I ended up landing the role of Technical Product 
                     Analyst. I returned to classes in January 2023 and was hired part-time at SaaSquatch. 
-                    My two positions at SaaSquatch have given me well-rounded knowledge of the SaaS industry, 
+                    My two positions at the company have given me a well-rounded knowledge of the SaaS industry, 
                     as I have worked with all departments, ranging from engineering to marketing, to product 
                     management.
                 </OverviewSpanDiv>

@@ -1,15 +1,16 @@
 import styled from "styled-components";
 import { PageDescriptionSpan, PageSubtitleSpan } from "../../components/GeneralSC";
 
-const ExperienceSectionDiv = styled.div`
+const ScrollSectionDiv = styled.div`
     display: flex;
     flex-direction: column;
+    width: 96%;
     gap: 10px;
 `
-const TitleBoxDiv = styled(ExperienceSectionDiv)`
+const TitleBoxDiv = styled(ScrollSectionDiv)`
     gap: 30px;
 `
-const ExperienceBoxDiv = styled.div`
+const ScrollBoxDiv = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,7 +22,7 @@ const ExperienceBoxDiv = styled.div`
     border: 2px solid #f6f6f6;
     border-radius: 8px;
     padding: 40px 20px;
-    gap: 20px;
+    gap: 30px;
 
     ::-webkit-scrollbar{
         -webkit-appearance: none;
@@ -74,17 +75,19 @@ const ExpDescriptionSpan = styled.span`
 `
 
 export interface ExpCardProps {
-    position: string;
+    title: string;
     dates: string;
     company: string;
     description: string;
 }
 interface ExpBoxProps {
+    title: string;
+    description: string;
     exps: Array<ExpCardProps>;
 }
 
 export const ExperienceCard: React.FC<ExpCardProps> = ({
-    position, dates, company, description
+    title: position, dates, company, description
 }) => {
     return (
         <ExperienceCardDiv>
@@ -101,23 +104,23 @@ export const ExperienceCard: React.FC<ExpCardProps> = ({
 }
 
 export const ExperienceSection: React.FC<ExpBoxProps> = ({
-    exps
+    title, description, exps
 }) => {
     return (
-        <ExperienceSectionDiv>
+        <ScrollSectionDiv>
             <TitleBoxDiv>
-                <ExperienceSectionDiv>
-                    <PageSubtitleSpan>Experience</PageSubtitleSpan>
-                    <PageDescriptionSpan>Scroll through this list to see my past (and current) work experience. The list is ordered from most to least recent.</PageDescriptionSpan>
-                </ExperienceSectionDiv>
-                <ExperienceBoxDiv>
+                <ScrollSectionDiv>
+                    <PageSubtitleSpan>{title}</PageSubtitleSpan>
+                    <PageDescriptionSpan>{description}</PageDescriptionSpan>
+                </ScrollSectionDiv>
+                <ScrollBoxDiv>
                 {exps.map((exp) => {
                     return (
-                        <ExperienceCard position={exp.position} dates={exp.dates} company={exp.company} description={exp.description}/>
+                        <ExperienceCard title={exp.title} dates={exp.dates} company={exp.company} description={exp.description}/>
                     )
                 })}
-                </ExperienceBoxDiv>
+                </ScrollBoxDiv>
             </TitleBoxDiv>
-        </ExperienceSectionDiv>
+        </ScrollSectionDiv>
     )
 }
