@@ -12,7 +12,7 @@ export const BlueBoxDiv = styled.div`
     background-color: #EDF6F9;
     border-radius: 4px;
     padding: 2% 5%;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
 `
 export const CardsLayoutContainerDiv = styled.div`
     display: flex;
@@ -28,11 +28,7 @@ export const CardsLayoutDiv = styled.div`
 export const CardContainerDiv = styled.div`
     height: 150px;
     width: 264px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-`
-export const ExpCardContainerDiv = styled(CardContainerDiv)`
-    height: 330px;
-    width: 400px;
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.15));
 `
 export const CardDiv = styled.div`
     height: 100%;
@@ -87,31 +83,6 @@ export const YearSpan = styled.span`
     line-height: 22px;
     color: #F07167;
 `
-export const ExpCardFrontDiv = styled(CardFrontDiv)`
-    justify-content: space-between;
-    align-items: flex-start;
-`
-export const ExpPositionSpan = styled.span`
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
-    color: #3B8EA5;
-`
-export const ExpDatesSpan = styled(ExpPositionSpan)`
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-`
-export const ExpCompanySpan = styled(ExpDatesSpan)`
-    font-weight: 300;
-    color: #264653;
-`
-export const ExpDatesCompanyDiv = styled.div`
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-`
 
 /* Competencies */
 export const CompCard: React.FC<CompCardProps> = ({
@@ -161,29 +132,3 @@ export const AwardsFlipCard: React.FC<AwardCardProps> = ({
     )
 };
 
-/* Experience */
-export const ExpCard: React.FC<ExpCardProps> = ({
-    position, dates, company, description
-}) => {
-    return (
-        <CardDiv>
-            <CardBackDiv>{description}</CardBackDiv>
-            <ExpCardFrontDiv>
-                <ExpPositionSpan>{position}</ExpPositionSpan>
-                <ExpDatesCompanyDiv>
-                    <ExpDatesSpan>{dates}</ExpDatesSpan>
-                    <ExpCompanySpan>{company}</ExpCompanySpan>
-                </ExpDatesCompanyDiv>
-            </ExpCardFrontDiv>
-        </CardDiv>
-    )
-};
-export const ExpFlipCard: React.FC<ExpCardProps> = ({
-    position, dates, company, description
-}) => {
-    return (
-        <ExpCardContainerDiv>
-            <ExpCard position={position} dates={dates} company={company} description={description}/>
-        </ExpCardContainerDiv>
-    )
-};

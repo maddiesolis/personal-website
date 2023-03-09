@@ -51,7 +51,7 @@ export const AnimatedButtonDiv = styled.div`
     width: 150px;
     height: 40px;
     border: 3px solid #3B8EA5;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.15));
 `
 export const AnimatedButton = styled.button`
     height: 44px;
@@ -73,5 +73,5 @@ export const AnimatedButtonLink = styled(Link)`
     line-height: 21px;
     text-align: center;
     color: #EDF6F9;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
 `

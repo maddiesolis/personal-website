@@ -1,4 +1,4 @@
-import { AwardCard, AwardsFlipCard, BlueBoxDiv, CardsLayoutContainerDiv, CardsLayoutDiv, CompsFlipCard, ExpFlipCard } from "./FlipCard";
+import { AwardCard, AwardsFlipCard, BlueBoxDiv, CardsLayoutContainerDiv, CardsLayoutDiv, CompsFlipCard } from "./FlipCard";
 import { BoxTitleDiv, PageDescriptionSpan, PageSubtitleSpan, PageTitleDiv } from "./GeneralSC";
 import styled from "styled-components";
 
@@ -113,31 +113,5 @@ export const ExpCardsLayoutDiv = styled.div`
     gap: 40px;
     /* padding: 10px; */
 `
-
-export const ExpCardsGrid: React.FC<ExpCardsGridProps> = ({
-    gridtitle: title,
-    description,
-    cards,
-}) => {
-    return (
-    <ExpSectionDiv>
-        <BoxTitleDiv>
-            <PageSubtitleSpan>{title}</PageSubtitleSpan>
-            <PageDescriptionSpan>{description}</PageDescriptionSpan>
-        </BoxTitleDiv>
-            <ExpBoxDiv>
-                <ExpCardsLayoutDiv>
-                    {cards.map((card) => {
-                        return (
-                            <ExpFlipCard position={card.position} dates={card.dates} company={card.company} description={card.description}/>
-                        )
-                    })}
-                </ExpCardsLayoutDiv>
-            </ExpBoxDiv>
-    </ExpSectionDiv>    
-    );
-};
-
-
 
 export default CompsCardsGrid;

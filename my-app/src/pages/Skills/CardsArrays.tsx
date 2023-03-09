@@ -5,28 +5,28 @@ export const CompsCards: CompCardProps[] = [
     {
         svg: <CodeSVG/>,
         title: "Web development",
-        description: "Through my experience as a React developer at SaaSquatch, my problem solving and debugging abilities have become extremely fine-tuned. I am passionate about upkeeping and utilizing software engineering best practices."
+        description: "My professional experience as a frontend web developer sharpened my programming abilities, as well as my knowledge and passion for upkeeping coding standards, best software engineering practices, and utilizing various tools to make web dev more efficient."
+    },
+    {
+        svg: <ChartSVG/>,
+        title: "Data analytics",
+        description: "My current role at SaaSquatch is largely oriented around sharing data in digestible formats. As I have a personal interest for data visualisation, I transfer my skills in this area into my work and share analytics in creative and reader-friendly ways. "
+    },
+    {
+        svg: <PenSVG/>,
+        title: "UI/UX design",
+        description: "I work closely with UI/UX designers at SaaSquatch and am currently completing a user interface centred design project at UVic. As a computer science and visual arts combined major student, I excel in designing, prototyping, and building human-compatible interfaces."
+    },
+    {
+        svg: <MagGlasSVG/>,
+        title: "Research",
+        description: "I complete data-driven research projects in my current role at SaaSquatch that aim to shape the company's roadmap. I communicate my research findings through visual analytics, actionable recommendations, research papers, and research defenses."
     },
     {
         svg: <DatabaseSVG/>,
         title: "Database management",
         description: "After using BigQuery and SQL at SaaSquatch, my interest in DBM has grown significantly. I am proficient in PostgreSQL and am familiar with DB tools such as BigQuery and DataGrip."
     },
-    {
-        svg: <ChartSVG/>,
-        title: "Data analytics",
-        description: "As a product analyst at SaaSquatch, I complete many research projects that use both quantitative and qualitative analytics. I aim to visualise my findings in a way that caters to many different kinds of people."
-    },
-    {
-        svg: <PenSVG/>,
-        title: "UI/UX design",
-        description: "I work closely with UI/UX designers at SaaSquatch and am currently completing a user interface centred design project at UVic. As a computer science and visual arts combined major student, I excel in designing, prototyping, and building human-computer interactions."
-    },
-    {
-        svg: <MagGlasSVG/>,
-        title: "Product management research",
-        description: "The research I complete as a product analyst at SaaSquatch aims to guide the company’s product managers in their product shaping and roadmap planning. Thus, I am well-versed in SaaS company operations and working as part of a product management team."
-    }
 ];
 
 export const AwardsCards: AwardCardProps[] = [
@@ -60,16 +60,16 @@ export const ExpCards: ExpCardProps[] = [
         description: "Project management and completion of major research projects for the company. Create quantitative data analysis reports using BigQuery with SQL. Conduct surveys and interviews for qualitative analysis. Conduct UX, market, competitor, user, and customer research, and present findings in research papers, reports and defences. Research projects used by company executives to make well-informed business decisions and engineering project plans."
     },
     {
-        position: "Technical Product Analyst",
-        dates: "September 2022 - Present",
+        position: "Frontend React Developer",
+        dates: "May 2022 - August 2022",
         company: "SaaSquatch, Victoria, BC",
-        description: "Project management and completion of major research projects for the company. Create quantitative data analysis reports using BigQuery with SQL. Conduct surveys and interviews for qualitative analysis. Conduct UX, market, competitor, user, and customer research, and present findings in research papers, reports and defences. Research projects used by company executives to make well-informed business decisions and engineering project plans."
+        description: "Frontend web development using Typescript with React. Updated SaaSquatch’s software platform and company website, including rebuild of navigation sidebar in SaaSquatch’s documentation site (docs.saasquatch.com). Used Storybook to document code segments and maintain the company’s frontend coding standards; completed frontend and backend quality assurance. Collaborated with UI/UX designers to ensure seamless designs and implementations."
     },
     {
-        position: "Technical Product Analyst",
-        dates: "September 2022 - Present",
-        company: "SaaSquatch, Victoria, BC",
-        description: "Project management and completion of major research projects for the company. Create quantitative data analysis reports using BigQuery with SQL. Conduct surveys and interviews for qualitative analysis. Conduct UX, market, competitor, user, and customer research, and present findings in research papers, reports and defences. Research projects used by company executives to make well-informed business decisions and engineering project plans."
+        position: "Student Support Services Assistant",
+        dates: "November 2021 - April 2022",
+        company: "University of Victoria, Victoria, BC",
+        description: "Encrypted, processed, and distributed electronic and hardcopy official student transcripts. Updated student records and processed education verifications. Assisted with user testing research projects for the University of Victoria’s new course registration portal. Banner and Microsoft Office software (Excel, Outlook, and Teams)."
     },
 
 ];

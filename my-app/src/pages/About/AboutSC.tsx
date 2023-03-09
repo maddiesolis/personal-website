@@ -1,75 +1,8 @@
 import styled from "styled-components";
 import { PageSubtitleSpan } from "../../components/GeneralSC";
-import { SchoolSVG } from "../../svg/AboutSVG";
+import { SchoolSVG, WorkSVG } from "../../svg/AboutSVG";
 import { DescriptionSpan } from "../Home/HomeSC";
 
-export const OuterAboutDiv = styled.div`
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    width: fit-content;
-    /* margin: 50px 166px 100px 166px; */
-    gap: 100px;
-    /* padding-bottom: 100px; */
-`
-export const TopAboutDiv = styled.div`
-    /* display: grid;
-    grid-template-columns: 50% 50%;
-    grid-gap: 100px;
-    align-items: start;
-    justify-content: start;
-    height: 840px; */
-
-    display: flex;
-    justify-content: space-between;
-    
-`
-export const BottomAboutDiv = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-`
-// export const AboutContentDiv = styled.div`
-//     display: grid;
-//     grid-template-columns: 1fr 1fr;
-//     height: 100%;
-// `
-export const AboutLeftSideDiv = styled.div`
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    margin: 160px;
-    margin-top: 50px;
-    gap: 50px;
-`
-export const AboutRightSideDiv = styled(AboutLeftSideDiv)`
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-`
-export const BasicInfoDiv = styled.div`
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 300px;
-    align-items: center;
-`
-export const InfoSectionDiv = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-`
-export const AboutCardDiv = styled.div`
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    align-items: center;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    border-radius: 4px;
-    padding: 10px;
-    width: 1000px;
-    height: fit-content;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-`
 export const OverviewContainerDiv = styled.div`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -91,9 +24,47 @@ export const OverviewSVGDiv = styled.div`
     align-items: flex-end;
     justify-content: flex-end;
 `
+export const MiddleSectionDiv = styled.div`
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+`
+export const SVGContainerDiv = styled.div`
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-left: 150px;
+`
+// const FactsSectionContainerDiv = styled.div`
+//     display: flex;
+// `
+// const FactDiv = styled.div`
+//     display: flex;
+//     flex-direction: column;
+// `
+// const FactTextSpan = styled.div`
+//     color: blue;
+// `
+// export const FactsSection: React.FC = ({
+// }) => {
+//     return (
+//         <FactsSectionContainerDiv>
+//             <FactDiv>
+//             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+//                 <path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/>
+//             </svg>
+//                 <FactTextSpan>
+//                     Based in Victoria, BC
+//                 </FactTextSpan>
+
+//             </FactDiv>
+//         </FactsSectionContainerDiv>
+//     )
+// }
 export const OverviewSection: React.FC = ({
 }) => {
     return (
+        <>
             <OverviewWriteupDiv>
                 <PageSubtitleSpan>Overview</PageSubtitleSpan>
                 <OverviewSpanDiv>
@@ -112,5 +83,6 @@ export const OverviewSection: React.FC = ({
                     management.
                 </OverviewSpanDiv>
             </OverviewWriteupDiv>
+            </>
     )
 }

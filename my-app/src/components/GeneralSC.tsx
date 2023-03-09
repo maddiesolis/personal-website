@@ -62,7 +62,7 @@ export const BasicCardDiv = styled.div`
     align-items: center;
     background-color: white;
     border-radius: 4px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.15));
 `
 export const ListsDiv = styled.div`
     width: 100%;
@@ -76,7 +76,7 @@ export const ListCardDivPink = styled.div`
     justify-content: space-between;
     width: 90%;
     background-color: #F9E8D8;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
     padding: 40px;

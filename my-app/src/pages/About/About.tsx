@@ -1,16 +1,15 @@
 import React from 'react';
-import CompsCardsGrid, { AwardsCardsGrid, ExpCardsGrid } from '../../components/CardsGrid';
+import CompsCardsGrid, { AwardsCardsGrid } from '../../components/CardsGrid';
 import { PageContainerDiv } from '../../components/ComponentsSC';
 import Footer from '../../components/Footer';
 import { BasicCardDiv, CenteredPageDiv, InnerPageContainer, PageSubtitleSpan, PageTitleSpan, StandardParaSPan, SubSubTitleSpan } from '../../components/GeneralSC';
 import { BooksSVG, ComputerSVG, SchoolSVG, TreeSVG, VictoriaSVG, WorkSVG } from '../../svg/AboutSVG';
 import { DescriptionSpan } from '../Home/HomeSC';
 import { AwardsCards, CompsCards, ExpCards } from '../Skills/CardsArrays';
-import { AboutCardDiv, TopAboutDiv, AboutLeftSideDiv, AboutRightSideDiv, BasicInfoDiv, InfoSectionDiv, OverviewWriteupDiv, OuterAboutDiv, BottomAboutDiv, OverviewSection } from './AboutSC';
+import { MiddleSectionDiv, OverviewSection, SVGContainerDiv } from './AboutSC';
+import { ExperienceSection } from './Experience';
 
-export interface ITimelinePageProps {}
-
-const TimelinePage: React.FunctionComponent<ITimelinePageProps> = (props) => {
+const TimelinePage: React.FC = () => {
 
     return (
         <PageContainerDiv>
@@ -20,14 +19,19 @@ const TimelinePage: React.FunctionComponent<ITimelinePageProps> = (props) => {
                 contents={
                 <CenteredPageDiv>
                     <OverviewSection/>
+                    <MiddleSectionDiv>
+                        <ExperienceSection exps={ExpCards}/>
+                        {/* <SVGContainerDiv><WorkSVG/></SVGContainerDiv> */}
+                    </MiddleSectionDiv>
                     {/* <AwardsCardsGrid gridtitle='Awards & Accomplishments' cards={AwardsCards} description='Hover over a card to flip it; the back of every card contains a detailed description of that award.'/> */}
-
                 </CenteredPageDiv>}/>
         </PageContainerDiv>
     );
 };
 
 export default TimelinePage;
+
+/* <AwardsCardsGrid gridtitle='Awards & Accomplishments' cards={AwardsCards} description='Hover over a card to flip it; the back of every card contains a detailed description of that award.'/> */
 
 // return (
 //     <InnerPageContainer 
