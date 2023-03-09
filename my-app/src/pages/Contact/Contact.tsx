@@ -6,7 +6,7 @@ import { EmailSVG, GitSVG, LinkedinSVG } from '../../svg/contactSVG';
 import { DescriptionSpan } from '../Home/HomeSC';
 import { ContactDescriptionSpan, ContactPageDiv, ContactPageTitleDiv, IconsDiv, OuterContactPageDiv } from './ContactSC';
 import CopyToClipboard from 'react-copy-to-clipboard';
-import { EmailCopyToClipboard } from './EmailButton';
+import { EmailButtonComponent } from './EmailButton';
 
 export const ContactPage: React.FunctionComponent = () => {
     return (
@@ -19,7 +19,7 @@ export const ContactPage: React.FunctionComponent = () => {
                 <IconsDiv>
                     <GitSVG/>
                     <LinkedinSVG/>
-                    <EmailCopyToClipboard/>
+                    <EmailButtonComponent/>
                 </IconsDiv>
                 
             </ContactPageDiv>
