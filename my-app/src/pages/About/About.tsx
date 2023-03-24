@@ -20,7 +20,7 @@ const AboutPage: React.FC = () => {
         <PageContainerDiv>
             <InnerPageContainer 
                 pagetitle={'About me'} 
-                description={'On this page, you’ll learn more about who I am, and what I do (in both professional and academic contexts).'} 
+                description={'On this page, you’ll learn more about who I am, and what I do.'} 
                 contents={
                 <CenteredPageDiv>
                     <OverviewSection/>
