@@ -93,25 +93,11 @@ export const ExpBoxDiv = styled.div`
     height: 500px;
     overflow-y: scroll;
     padding-left: 20px;
-    /* ::-webkit-scrollbar{
-        width: 10px;
-    }
-    ::-webkit-scrollbar-thumb {
-        border-radius: 4px;
-        background-color: rgba(0, 0, 0, .5);
-        box-shadow: 0 0 1px rgba(255, 255, 255, .5);
-    } */
 `
 export const ExpCardsLayoutDiv = styled.div`
     display: flex;
     flex-direction: column;
-    /* height: 400px; */
-    /* overflow: hidden; */
-    /* overflow-y: scroll; */
-    /* justify-content: space-between; */
-    /* align-items: left; */
     gap: 40px;
-    /* padding: 10px; */
 `
 
 export default CompsCardsGrid;

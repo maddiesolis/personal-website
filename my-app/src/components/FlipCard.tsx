@@ -10,6 +10,7 @@ export const BlueBoxDiv = styled.div`
     width: fit-content;
     gap: 20px;
     background-color: #EDF6F9;
+    /* background-color: white; */
     border-radius: 4px;
     padding: 2% 5%;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
