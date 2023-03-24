@@ -6,6 +6,7 @@ import HomePage from './pages/Home/Home';
 import ProjectsPage from './pages/Projects/Projects';
 import { SkillsPage } from './pages/Skills/Skills';
 import AboutPage from './pages/About/About';
+import { TabTitle } from './components/TabTitle';
 
 export interface IApplicationProps {}
 
