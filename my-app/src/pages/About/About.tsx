@@ -1,12 +1,8 @@
 import React from 'react';
-import CompsCardsGrid, { AwardsCardsGrid } from '../../components/CardsGrid';
 import { PageContainerDiv } from '../../components/ComponentsSC';
-import Footer from '../../components/Footer';
-import { BasicCardDiv, CenteredPageDiv, InnerPageContainer, PageSubtitleSpan, PageTitleSpan, StandardParaSPan, SubSubTitleSpan } from '../../components/GeneralSC';
-import { BooksSVG, ComputerSVG, SchoolSVG, TreeSVG, VictoriaSVG, WorkSVG } from '../../svg/AboutSVG';
-import { DescriptionSpan } from '../Home/HomeSC';
-import { AwardsCards, CompsCards, ExpCards } from '../Skills/CardsArrays';
-import { MiddleSectionDiv, OverviewSection, SVGContainerDiv } from './AboutSC';
+import { CenteredPageDiv, InnerPageContainer } from '../../components/GeneralSC';
+import { AwardsCards, ExpCards } from '../Skills/CardsArrays';
+import { MiddleSectionDiv, OverviewSection } from './AboutSC';
 import { ExperienceSection } from './Experience';
 import styled from 'styled-components';
 
@@ -25,9 +21,9 @@ const AboutPage: React.FC = () => {
                 <CenteredPageDiv>
                     <OverviewSection/>
                     <MiddleSectionDiv>
-                        <ExperienceSection title="Experience" description="Scroll through this list to see my past (and current) work experience. The list is ordered from most to least recent." exps={ExpCards}/>
+                        <ExperienceSection title="Experience" description="Scroll through this list to see my work experience history." exps={ExpCards}/>
                         <AwardsDiv>
-                            <ExperienceSection title="Awards" description="Scroll through this list to see the scholarships and bursaries I have been awarded. The list is ordered from most to least recent." exps={AwardsCards}/>
+                            <ExperienceSection title="Awards" description="Scroll through this list to see the scholarships and bursaries I have been awarded." exps={AwardsCards}/>
                         </AwardsDiv>
                     </MiddleSectionDiv>
                 </CenteredPageDiv>}/>

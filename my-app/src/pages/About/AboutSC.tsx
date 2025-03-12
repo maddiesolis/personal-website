@@ -1,7 +1,5 @@
 import styled from "styled-components";
-import { PageSubtitleSpan } from "../../components/GeneralSC";
-import { SchoolSVG, WorkSVG } from "../../svg/AboutSVG";
-import { DescriptionSpan } from "../Home/HomeSC";
+import { SchoolSVG } from "../../svg/AboutSVG";
 
 export const OverviewContainerDiv = styled.div`
     display: grid;
@@ -45,14 +43,15 @@ export const OverviewSection: React.FC = ({
     return (
         <>
             <OverviewWriteupDiv>
-                {/* <PageSubtitleSpan>Overview</PageSubtitleSpan> */}
                 <OverviewDiv>
                 <OverviewSpanDiv>
-                    Hey! My name is Madeline and I am currently in my third year of the Visual Arts and Computer Science
-                    Combined Major program at the University of Victoria. This interdisciplinary 
+                    Hey! My name is Madeline and I am a full stack software developer. I graduated from the University of Victoria
+                    in May 2024 and completed the Computer Science and Visual Arts Combined Major program. This interdisciplinary 
                     field has inspired me to continue bridging the gap between technical and creative 
-                    worlds, and has given me the tools and skills I need to succeed in both areas. I love art, especially digital
-                    and analogue drawing, and I also love to dance ballet, salsa, and bachata!
+                    worlds, and has given me the tools and skills I need to succeed in both areas.
+                    I am passionate about building scalable, reliable software that solves real-world problems and am focused
+                    on writing maintainable code, fostering cohesive engineering teams, and leveraging AI-driven tools to enhance efficiency.
+                    As for my personal interests, I have a passion for contemporary art, particularly creative coding and digital/analogue drawing. I also love to stay active by dancing ballet and salsa!
                 </OverviewSpanDiv>
                 <SchoolSVG/>
             </OverviewDiv>

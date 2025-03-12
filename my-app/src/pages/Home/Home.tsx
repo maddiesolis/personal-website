@@ -1,6 +1,5 @@
 import React from 'react';
-import { HomepageContainerDiv, PageContainerDiv } from '../../components/ComponentsSC';
-import Footer from '../../components/Footer';
+import { HomepageContainerDiv } from '../../components/ComponentsSC';
 import { HomepageSVG } from '../../svg/HomepageSVG';
 import { AnimatedButton, AnimatedButtonDiv, AnimatedButtonLink, DescriptionSpan, FullNameSpan, HomeDiv, HomeLeftSideDiv, HomeRightSideDiv, HomeTitleDiv, IntroSpan } from './HomeSC';
 
@@ -15,7 +14,7 @@ const HomePage: React.FunctionComponent<IHomePageProps> = (props) => {
                     <HomeTitleDiv>
                         <IntroSpan>Hi, my name is</IntroSpan>
                         <FullNameSpan>Madeline Solis de Ovando</FullNameSpan>
-                        <DescriptionSpan>and I'm a computer science and visual arts student working towards the enhancement of human-computer interactions.</DescriptionSpan>
+                        <DescriptionSpan>and I'm a full stack software developer working towards the enhancement of human-computer interaction.</DescriptionSpan>
                     </HomeTitleDiv>
                     <AnimatedButtonDiv>
                         <AnimatedButton>

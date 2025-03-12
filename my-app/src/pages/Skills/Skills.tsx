@@ -1,17 +1,15 @@
 import React from 'react';
 import CompsCardsGrid from '../../components/CardsGrid';
 import { PageContainerDiv } from '../../components/ComponentsSC';
-import Footer from '../../components/Footer';
 import { CenteredPageDiv, InnerPageContainer, ListCardDivGreen, ListCardDivPink, ListCardDivYellow, ListItemSpan, ListsContainer, ListsDiv, PageSubtitleSpan, PageTitleSpan } from '../../components/GeneralSC';
 import { CompsCards } from './CardsArrays';
-import { SkillsDiv } from './SkillsSC';
 
 const programmingLanguages = [
-    "C", "Java", "Python", "Assembly language", "SQL", "R", "HTML", "CSS", "Typescript"
+    "Typescript", "SQL", "Python", "C", "C++", "Java"
 ];
 
 const softwaresFrameworks = [
-    "React", "Git", "Visual Studio Code", "DataGrip", "BigQuery", "Storybook", "Coda", "Microsoft Office", "Google Workspace"
+    "React", "Next.js", "NestJS", "TypeORM", "Jest", "Git", "Visual Studio Code", "DataDog", "BigQuery", "Storybook", "Bruno", "Google Sheets (Advanced)"
 ];
 
 const designerTools = [

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { AwardCardProps, CompCardProps, ExpCardProps } from "./CardsGrid";
+import { AwardCardProps, CompCardProps } from "./CardsGrid";
 
 export const BlueBoxDiv = styled.div`
     display: flex;

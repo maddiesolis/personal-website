@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { LogoLink, NavContainerDiv, NavMenuButton, NavMenuButtonLink, NavMenuDiv, NavMenuLink } from './ComponentsSC';
 
 const Navbar: React.FunctionComponent = () => {

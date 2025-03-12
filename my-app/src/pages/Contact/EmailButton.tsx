@@ -1,5 +1,4 @@
 import { EmailSVG } from "../../svg/contactSVG";
-import useCopyToClipboard from "./CopyToClipboard";
 import styled from "styled-components";
 
 const EmailButton = styled.button`

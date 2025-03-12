@@ -1,5 +1,5 @@
-import { AwardCard, AwardsFlipCard, BlueBoxDiv, CardsLayoutContainerDiv, CardsLayoutDiv, CompsFlipCard } from "./FlipCard";
-import { BoxTitleDiv, PageDescriptionSpan, PageSubtitleSpan, PageTitleDiv } from "./GeneralSC";
+import { AwardsFlipCard, BlueBoxDiv, CardsLayoutContainerDiv, CardsLayoutDiv, CompsFlipCard } from "./FlipCard";
+import { PageDescriptionSpan, PageSubtitleSpan, PageTitleDiv } from "./GeneralSC";
 import styled from "styled-components";
 
 export interface CompCardProps {

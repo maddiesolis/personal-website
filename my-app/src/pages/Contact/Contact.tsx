@@ -1,11 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { PageContainerDiv } from '../../components/ComponentsSC';
-import { InnerPageContainer, PageTitleDiv, PageTitleSpan } from '../../components/GeneralSC';
-import { EmailSVG, GitSVG, LinkedinSVG } from '../../svg/contactSVG';
-import { DescriptionSpan } from '../Home/HomeSC';
+import { PageTitleSpan } from '../../components/GeneralSC';
+import { GitSVG, LinkedinSVG } from '../../svg/contactSVG';
 import { ContactDescriptionSpan, ContactPageDiv, ContactPageTitleDiv, IconsDiv, OuterContactPageDiv } from './ContactSC';
-import CopyToClipboard from 'react-copy-to-clipboard';
 import { EmailButtonComponent } from './EmailButton';
 
 export const ContactPage: React.FunctionComponent = () => {
