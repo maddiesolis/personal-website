@@ -45,13 +45,7 @@ export const OverviewSection: React.FC = ({
             <OverviewWriteupDiv>
                 <OverviewDiv>
                 <OverviewSpanDiv>
-                    Hey! My name is Madeline and I am a full stack software developer. I graduated from the University of Victoria
-                    in May 2024 and completed the Computer Science and Visual Arts Combined Major program. This interdisciplinary 
-                    field has inspired me to continue bridging the gap between technical and creative 
-                    worlds, and has given me the tools and skills I need to succeed in both areas.
-                    I am passionate about building scalable, reliable software that solves real-world problems and am focused
-                    on writing maintainable code, fostering cohesive engineering teams, and leveraging AI-driven tools to enhance efficiency.
-                    As for my personal interests, I have a passion for contemporary art, particularly creative coding and digital/analogue drawing. I also love to stay active by dancing ballet and salsa!
+                Hi! I'm Madeline, a full stack software developer. I graduated from the University of Victoria in May 2024 with a degree in Computer Science and Visual Arts. This interdisciplinary background fuels my passion for bridging the gap between tech and creativity. I focus on building scalable, reliable software, writing maintainable code, and fostering cohesive engineering teams. Outside of work, I enjoy contemporary art, creative coding, and staying active through ballet and salsa!
                 </OverviewSpanDiv>
                 <SchoolSVG/>
             </OverviewDiv>
