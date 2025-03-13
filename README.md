@@ -1,5 +1,5 @@
 # Personal Website
-Developed March, 2023.
+Developed in March, 2023.
 
 ## Tech Stack
 React app using Typescript.
